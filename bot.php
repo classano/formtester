@@ -36,14 +36,25 @@ foreach($formsArr AS $form){
     $htmlOut .= ('</tr>');
 }
 ?>
-<table>
-    <thead>
-        <tr>
-            <th>Adress:</th>
-            <th>Resultat:</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php echo($htmlOut); ?>
-    </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="sv-SE">
+    <head>
+        <title>Kontakta oss</title>
+        <style>
+            th{text-align: left;}
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Adress:</th>
+                    <th>Resultat:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php echo($htmlOut); ?>
+            </tbody>
+        </table>
+    </body>
+</html>
