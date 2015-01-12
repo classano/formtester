@@ -1,15 +1,15 @@
 <?php
 // Skapa en array med de sajter som ska testas.
-$url = 'http://www.nitea.se/wp-content/themes/nitea/send.mail.php?p=kontakt';
+$url = '';
 $formsArr = array();
 $formsArr[] = array(
     'url' => $url,
     'fields' => array(
-        'kontakt_name' => urlencode('Nitea AB'),
-        'kontakt_email' => urlencode('no-reply@nitea.se'),
-        'kontakt_phone' => urlencode('08771314'),
-        'kontakt_subject' => urlencode('Automatiskt test av formulär'),
-        'kontakt_msg' => urlencode('Det här meddelandet skickas via ert formulär på sidan: "'.$url.'"')
+        'kontakt_name' => urlencode(''),
+        'kontakt_email' => urlencode(''),
+        'kontakt_phone' => urlencode(''),
+        'kontakt_subject' => urlencode(''),
+        'kontakt_msg' => urlencode('')
     )
 );
 
